@@ -27,9 +27,9 @@ class MyApp:
 		self.button1.grid(row=0,column=0)
 		
 	        # Add a second button!
-		self.button1 = Button(self.myContainer1)
-		self.button1.configure(text="right", background= "red")
-		self.button1.grid(row=0,column=1)		
+		self.button2 = Button(self.myContainer1)
+		self.button2.configure(text="right", background= "red")
+		self.button2.grid(row=0,column=1)		
 		
 						
 		# "Bind" an action to the first button												
@@ -51,7 +51,7 @@ class MyApp:
 		drawpad.move(oval,-10,0)
 	
 	# Add the event handler for the second button to make it move right!
-        def button1Click(self, event):
+        def button2Click(self, event):
 	       global oval
 	       global drawpad
 	       drawpad.move(oval,10,0)
